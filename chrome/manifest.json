@@ -1,0 +1,24 @@
+{
+    "background": {
+        "page": "background.html"
+    },
+    "description": "Pequeños detalles que hacen de la WebCT un lugar mejor.",
+    "page_action": {
+        "default_icon": "g/i19.png",
+        "default_title": "Opciones de WebCT",
+        "default_popup": "x/panel.html"
+    },
+    "icons": {
+        "16": "g/i16.png",
+        "24": "g/i24.png",
+        "32": "g/i32.png",
+        "64": "g/i64.png",
+        "128": "g/i128.png"
+    },
+    "manifest_version": 2,
+    "name": "WebCT Plus UAL",
+    "permissions": ["tabs", "webRequest", "webRequestBlocking", "http://lms.ual.es/webct/urw/*", "https://lms.ual.es/webct/urw/*"],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "version": "0.9.19",
+    "web_accessible_resources": ["g/*", "fake/*"]
+}

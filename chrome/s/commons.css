@@ -1,0 +1,13 @@
+html { height: 100%; margin: 0; overflow: hidden; padding: 0; width: 100%; }
+
+body { height: 100%; margin: 0; padding: 0; width: 100%; font-family: Arial, sans-serif; background: #fff/*url(../g/web/wall.png)*/; overflow: hidden; }
+
+#fuckedSession { position: absolute; width: 500px; height: 240px; top: 40%; left: 50%; margin-top: -120px; margin-left: -250px; }
+#fuckedSession .inner { position: absolute; top: 32px; left: 0; right: 0; bottom: 0; border-radius: 1px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); background: -webkit-linear-gradient(170deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.5) 100%); background: -moz-linear-gradient(170deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.5) 100%); background: -o-linear-gradient(170deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.5) 100%); background: linear-gradient(170deg, rgba(255, 255, 255, 0.85) 0%, rgba(255, 255, 255, 0.5) 100%); }
+#fuckedSession .shield { position: absolute; top: 0; left: 0; background: url(../g/web/wm.png) no-repeat -180px -180px; bottom: 0; right: 0; }
+#fuckedSession .title { top: 24px; left: 24px; position: absolute; font-weight: bold; font-size: 20px; color: rgba(0, 0, 0, 0.8); }
+#fuckedSession .content { top: 60px; left: 24px; right: 24px; line-height: 20px; position: absolute; font-size: 15px; color: rgba(0, 0, 0, 0.65); }
+#fuckedSession .opt { bottom: 28px; left: 24px; text-decoration: none; right: 24px; line-height: 25px; height: 25px; position: absolute; border-radius: 2px; text-align: center; font-weight: bold; font-size: 12px; color: rgba(0, 0, 0, 0.7); cursor: pointer; background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%); background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%); background: -o-linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%); background: linear-gradient(0deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.2) 100%); -webkit-transition: box-shadow 0.15s ease; -webkit-transition-delay: 0s; -moz-transition: box-shadow 0.15s ease 0s; -o-transition: box-shadow 0.15s ease 0s; transition: box-shadow 0.15s ease 0s; }
+#fuckedSession .opt.opt1 { right: 258px; }
+#fuckedSession .opt.opt2 { left: 258px; }
+#fuckedSession .opt:hover { box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) inset; }
