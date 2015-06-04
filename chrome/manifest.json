@@ -18,7 +18,7 @@
     "manifest_version": 2,
     "name": "WebCT Plus UAL",
     "permissions": ["tabs", "webRequest", "webRequestBlocking", "http://lms.ual.es/webct/urw/*", "https://lms.ual.es/webct/urw/*"],
-    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
-    "version": "0.9.19",
+    "content_security_policy": "script-src 'self' https://www.google-analytics.com; object-src 'self'",
+    "version": "0.9.21",
     "web_accessible_resources": ["g/*", "fake/*"]
 }
