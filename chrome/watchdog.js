@@ -96,10 +96,14 @@ chrome.webRequest.onBeforeRequest.addListener(function(d) {
 
 
 // Concentrador AFTER
-chrome.webRequest.onResponseStarted.addListener(function(d) {
+chrome.webRequest.onCompleted.addListener(function(d) {
 
 	// Inyectar script decorador de ventanas
 	chrome.tabs.executeScript(d.tabId, { file: "j/changeIcon.js", runAt: "document_end" });
+
+	// Thanks
+	if (d.type == "sub_frame" && d.url.indexOf("populateMyWebCT.dowebct") > -1)
+		chrome.tabs.executeScript(d.tabId, { file: "j/thanks.js", runAt: "document_end", allFrames: true });	
 
 	// Modificar el nombre de las instancias creadas
 	if (d.type == "main_frame" && /RelativeResourceManager\?contentID=/.test(d.url)) {
